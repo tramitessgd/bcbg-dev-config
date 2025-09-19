@@ -1,0 +1,45 @@
+app:
+  msdb:
+    jdbcUrl: jdbc:sqlserver://127.0.0.1:1432;databaseName=DB_SEGURIDAD;
+    username: bcbg_sgd
+    password: u$erSGD2022
+    driverClassName: com.microsoft.sqlserver.jdbc.SQLServerDriver
+    dialect: org.hibernate.dialect.SQLServer2012Dialect
+  msdbrrhh:
+    jdbcUrl: jdbc:sqlserver://127.0.0.1:1432;databaseName=DB_RECURSOS_HUMANOS;
+    username: bcbg_sgd
+    password: u$erSGD2022
+    driverClassName: com.microsoft.sqlserver.jdbc.SQLServerDriver
+    dialect: org.hibernate.dialect.SQLServer2012Dialect
+  msdbdatabcbg:
+    jdbcUrl: jdbc:sqlserver://127.0.0.1:1432;databaseName=DATA_BCBG;
+    username: bcbg_sgd
+    password: u$erSGD2022
+    driverClassName: com.microsoft.sqlserver.jdbc.SQLServerDriver
+    dialect: org.hibernate.dialect.SQLServer2012Dialect
+  msdbtransaction:
+    jdbcUrl: jdbc:sqlserver://127.0.0.1:1433;databaseName=origamigt
+    username: sgd
+    password: u$erSGD2022
+    driverClassName: com.microsoft.sqlserver.jdbc.SQLServerDriver
+    dialect: org.hibernate.dialect.SQLServer2012Dialect
+
+bcbg:
+  rutaArchivos: C:/archivos/tramites/
+  rutaFirmaElectronica: C:/archivos/firmasElectronicas/
+  urlZull: http://127.0.0.1:8720/
+  urlWeb: http://127.0.0.1:8089/
+  urlDinardap: http://200.124.246.174:8785/api/dinardap/aplicacion/origami/persona/identificacion/
+  usuarioDinardap: adminVentanilla
+  claveDinardap: NKPCSQ10@PROPIEDAD
+  rutaReportes: classpath:reportes/
+  rutaImagenes: classpath:imagenes/
+  keyFiles: 12345
+
+spring:
+  jpa:
+    show-sql: true
+    properties:
+      hibernate:
+        format_sql: true
+        dialect: org.hibernate.dialect.SQLServer2012Dialect

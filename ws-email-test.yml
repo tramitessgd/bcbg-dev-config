@@ -1,0 +1,30 @@
+spring:
+  data:
+    mongodb:
+      port: 27017
+      host: 172.16.10.232
+      database: origami-docs
+      username: origami-docs
+      password: Montufar*2022.
+      authentication-database: admin
+
+eureka:
+  instance:
+    leaseRenewalIntervalInSeconds: 5
+    leaseExpirationDurationInSeconds: 2
+    appname: EMAIL-WEBSERVICES
+  client:
+    fetch-registry: false
+    register-with-eureka: false
+
+
+email:
+  correoHost: mail.bomberosguayaquil.gob.ec
+  correoPort: 587
+  correo: tramites.sgd@bomberosguayaquil.gob.ec
+  razonSocial: Benemerito Cuerpo de Bomberos
+  correoClave: COSISTSGD_6
+  rutaArchivos: D:/servers_files/archivos/
+  keyFiles: 12345
+
+

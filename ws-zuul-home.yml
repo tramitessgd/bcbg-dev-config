@@ -1,0 +1,68 @@
+spring:
+  datasource:
+    driver-class-name: com.microsoft.sqlserver.jdbc.SQLServerDriver
+    url: jdbc:sqlserver://127.0.0.1:1432;databaseName=DB_SEGURIDAD
+    username: bcbg_sgd
+    password: u$erSGD2022
+  jpa:
+    show-sql: true
+    properties:
+      hibernate:
+        format_sql: true
+        dialect: org.hibernate.dialect.SQLServer2012Dialect
+  kafka:
+    properties:
+      request.timeout.ms: 100
+    bootstrap-servers: 192.168.4.33:9092
+    consumer:
+      bootstrap-servers: 192.168.4.33:9092
+      group-id: kafka_logs
+      auto-offset-reset: earliest
+      key-deserializer: org.apache.kafka.common.serialization.StringDeserializer
+      value-deserializer: org.apache.kafka.common.serialization.StringDeserializer
+    producer:
+      bootstrap-servers: 192.168.4.33:9092
+      key-serializer: org.apache.kafka.common.serialization.StringSerializer
+      value-serializer: org.apache.kafka.common.serialization.StringSerializer
+    topics: logs-events,events
+
+zuul:
+  routes:
+    ws-transaccional:
+      path: /servicios/**
+      serviceId: service-base-transacccional
+      url: http://127.0.0.1:8721/
+      sensitiveHeaders: Cookie,Set-Cookie
+    ws-firma-ec:
+      path: /servicios-firma-ec/**
+      serviceId: firma-ec
+      stripPrefix: true
+      url: http://127.0.0.1:8725/
+    ws-mail:
+      path: /servicios-mail/**
+      serviceId: mail
+      stripPrefix: true
+      url: http://127.0.0.1:8724/
+    ws-media:
+      path: /servicios-archivos/**
+      serviceId: media
+      stripPrefix: true
+      url: http://127.0.0.1:8722/
+    ws-logs:
+      path: /servicios-logs/**
+      serviceId: logs
+      stripPrefix: true
+      url: http://127.0.0.1:8726/
+    ws-origamidocs:
+      path: /servicios-docs/**
+      serviceId: service-base-transacccional
+      url: http://127.0.0.1:8723/
+      sensitiveHeaders: Cookie,Set-Cookie
+    ws-security:
+      path: /servicios-security/**
+      serviceId: security
+      stripPrefix: true
+      url: http://127.0.0.1:8719/
+  host:
+    connect-timeout-millis: 120000
+    socket-timeout-millis: 120000

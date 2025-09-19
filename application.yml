@@ -1,0 +1,8 @@
+config:
+  security:
+    oauth:
+      jwt:
+        key: BomberoS_aPP*
+        client: wsBomberos
+        secret: bcbg-gye-origamigt
+        time: 216000

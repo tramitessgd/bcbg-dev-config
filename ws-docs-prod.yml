@@ -1,0 +1,20 @@
+spring:
+  data:
+    mongodb:
+      port: 27017
+      host: 192.10.10.47
+      database: origami-docs
+      username: origami-docs
+      password: oRD$Fq@i5jE87he
+      authentication-database: admin
+
+origamidocs:
+  apiContext: http://192.168.4.34:8720/servicios-docs
+  archivos: C:/archivos/documentos/
+  archivosFD: C:/archivos/firmados/
+  archivosNT: C:/archivos/notas/
+  imagenes: C:/archivos/imagenes/
+  apiImagenes: /origami/docs/imagen/
+  rutaReportes:  C:/origamibcbg/services/origami-ws-bcbg/reportes
+  rutaImagenes:  C:/origamibcbg/services/origami-ws-bcbg/imagenes
+  keyFiles: 12345

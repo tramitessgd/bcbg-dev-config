@@ -1,0 +1,20 @@
+spring:
+  data:
+    mongodb:
+      port: 27017
+      host: 172.16.10.232
+      database: origami-docs
+      username: origami-docs
+      password: Montufar*2022.
+      authentication-database: admin
+
+origamidocs:
+  apiContext: http://127.0.0.1:8720/servicios-docs
+  archivos: C:/archivos/documentos/
+  archivosFD: C:/archivos/firmados/
+  archivosNT: C:/archivos/notas/
+  imagenes: C:/archivos/imagenes/
+  apiImagenes: /origami/docs/imagen/
+  rutaReportes:  C:/origamigt/services/origami-ws/reportes/
+  rutaImagenes:  C:/origamigt/services/origami-ws/imagenes/
+  keyFiles: 12345

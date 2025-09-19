@@ -1,0 +1,13 @@
+app:
+  msdb:
+    jdbcUrl: jdbc:sqlserver://192.10.10.47:1433;databaseName=DB_SEGURIDAD;
+    username: bcbg_sgd
+    password: u$erSGD2022
+    driverClassName: com.microsoft.sqlserver.jdbc.SQLServerDriver
+    dialect: org.hibernate.dialect.SQLServer2012Dialect
+  msdbrrhh:
+    jdbcUrl: jdbc:sqlserver://192.10.10.47:1433;databaseName=DB_RECURSOS_HUMANOS;
+    username: bcbg_sgd
+    password: u$erSGD2022
+    driverClassName: com.microsoft.sqlserver.jdbc.SQLServerDriver
+    dialect: org.hibernate.dialect.SQLServer2012Dialect
