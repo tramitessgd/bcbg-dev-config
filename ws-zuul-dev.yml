@@ -31,38 +31,38 @@ zuul:
     ws-transaccional:
       path: /servicios/**
       serviceId: service-base-transacccional
-      url: http://127.0.0.1:8721/
+      url: https://127.0.0.1:8721/
       sensitiveHeaders: Cookie,Set-Cookie
     ws-firma-ec:
       path: /servicios-firma-ec/**
       serviceId: firma-ec
       stripPrefix: true
-      url: http://127.0.0.1:8725/
+      url: https://127.0.0.1:8725/
     ws-mail:
       path: /servicios-mail/**
       serviceId: mail
       stripPrefix: true
-      url: http://127.0.0.1:8724/
+      url: https://127.0.0.1:8724/
     ws-media:
       path: /servicios-archivos/**
       serviceId: media
       stripPrefix: true
-      url: http://127.0.0.1:8722/
+      url: https://127.0.0.1:8722/
     ws-logs:
       path: /servicios-logs/**
       serviceId: logs
       stripPrefix: true
-      url: http://127.0.0.1:8726/
+      url: https://127.0.0.1:8726/
     ws-origamidocs:
       path: /servicios-docs/**
       serviceId: service-base-transacccional
-      url: http://127.0.0.1:8723/
+      url: https://127.0.0.1:8723/
       sensitiveHeaders: Cookie,Set-Cookie
     ws-security:
       path: /servicios-security/**
       serviceId: security
       stripPrefix: true
-      url: http://127.0.0.1:8719/
+      url: https://127.0.0.1:8719/
   host:
     connect-timeout-millis: 120000
     socket-timeout-millis: 120000

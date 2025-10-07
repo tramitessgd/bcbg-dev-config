@@ -27,8 +27,8 @@ app:
 bcbg:
   rutaArchivos: C:/archivos/tramites/
   rutaFirmaElectronica: C:/archivos/firmasElectronicas/
-  urlZull: http://127.0.0.1:8720/
-  urlWeb: http://127.0.0.1:8089/
+  urlZull: https://127.0.0.1:8720/
+  urlWeb: https://127.0.0.1:8089/
   urlDinardap: http://200.124.246.174:8785/api/dinardap/aplicacion/origami/persona/identificacion/
   usuarioDinardap: adminVentanilla
   claveDinardap: NKPCSQ10@PROPIEDAD
